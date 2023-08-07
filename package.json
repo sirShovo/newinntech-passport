@@ -1,0 +1,37 @@
+{
+  "name": "newinntech-passport",
+  "version": "1.0.0",
+  "description": "new inntech technical test, nodejs api with jwt and passportjs",
+  "main": "src/main.ts",
+  "scripts": {
+    "dev": "ts-node-dev src/main.ts",
+    "start": "node build/main.js",
+    "tsc": "tsc",
+    "lint": "ts-standard",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Bornacelli",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/express": "^4.17.17",
+    "@types/morgan": "^1.9.4",
+    "ts-node-dev": "^2.0.0",
+    "ts-standard": "^12.0.2",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "extends": [
+      "./node_modules/ts-standard/eslintrc.json"
+    ]
+  }
+}
