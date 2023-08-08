@@ -2,7 +2,6 @@ import http from "http";
 import express, { Express } from "express";
 import morgan from "morgan";
 import posts from "./routes/posts.routes";
-import dairies from "./routes/diaries.route";
 import auth from "./routes/auth.route";
 import profile from "./routes/profile.route";
 import "./config/passport";
@@ -55,7 +54,6 @@ router.use("/ping", (_req, res) => {
   res.send("pong");
 });
 router.use("/posts", posts);
-router.use("/dairies", dairies);
 router.use("/auth", auth);
 router.use("/profile", profile);
 router.use((_req, res) => {
