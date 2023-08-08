@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Login NewInntech</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <style>
+    .facebook {
+      background-color: #3b5998 !important;
+      color: #fff !important;
+    }
+
+    .google {
+      background-color: #a35252 !important;
+      color: #fff !important;
+    }
+
+    .github {
+      background-color: #2c2e33 !important;
+      color: #fff !important;
+    }
+
+    .fa-facebook-f:before,
+    .fa-facebook:before {
+      content: "\f09a";
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="purple-light-2 lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Prueba NewInntech</a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <div class="row center">
+        <div class="col s6 offset-s3">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Login with:</span>
+            </div>
+            <div class="card-action">
+              <button href="/auth/facebook" class="waves-effect waves-light btn social facebook disabled">
+                <i class="fa fa-facebook"></i> Sign in with facebook
+              </button>
+              <a href="/auth/google" class="waves-effect waves-light btn social google">
+                <i class="fa fa-google"></i> Sign in with google
+              </a>
+              <a href="/auth/github" class="waves-effect waves-light btn social github">
+                <i class="fa fa-github"></i> Sign in with github
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

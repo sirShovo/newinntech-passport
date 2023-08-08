@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Profile</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" />
+  <style>
+    .card:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+        0 6px 6px rgba(0, 0, 0, 0.23);
+      margin-bottom: 54px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Prueba NewInntech</a>
+      <a href="/auth/logout" class="right">Logout</a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br /><br />
+      <div class="row center">
+        <div class="col s12">
+          <div class="card">
+            <div class="card-content blue lighten-3">
+              <span class="card-title white-text"><strong><i class="large material-icons">person</i>
+                </strong></span>
+            </div>
+            <div class="card-action">
+              <h5><b> Username: </b>
+                <%= user.username %>
+              </h5>
+              <h5><b> Email: </b>
+                <%= user.email %>
+              </h5>
+              <p><strong>Id</strong>: <%= user.id %>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Page</title>
+</head>
+
+<body>
+  <h1>Profile Page</h1>
+  <% if (user) { %>
+    <h3>Username : <%= user.username %>
+    </h3>
+    <h3>Email : <%= user.email %>
+    </h3>
+    <a href="/">Homepage</a>
+    <a href="/auth/logout">Logout</a>
+    <% } %>
+</body>
+
+</html> -->
