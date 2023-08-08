@@ -5,13 +5,13 @@ const Schema = mongoose.Schema;
 export type UserDocument = Document & {
   username: string;
   email: string;
-  googleId: string;
+  userId: string;
 };
 
 const userSchema = new Schema<UserDocument>({
   username: String,
   email: String,
-  googleId: String,
+  userId: String,
 });
 
 const User = mongoose.model<UserDocument>("User", userSchema);

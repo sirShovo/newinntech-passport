@@ -4,6 +4,7 @@ import morgan from "morgan";
 import posts from "./routes/posts.routes";
 import dairies from "./routes/diaries.route";
 import auth from "./routes/auth.route";
+import profile from "./routes/profile.route";
 import "./config/passport";
 import { COOKIE_KEY, MONGO_URI } from "./config/secrets";
 import passport from "passport";
@@ -56,6 +57,7 @@ router.use("/ping", (_req, res) => {
 router.use("/posts", posts);
 router.use("/dairies", dairies);
 router.use("/auth", auth);
+router.use("/profile", profile);
 router.use((_req, res) => {
   const error = new Error("not found");
   return res.status(404).json({
