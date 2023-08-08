@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import axios, { AxiosResponse } from "axios";
-import { PostEntry } from "../types";
+import { PostEntry } from "../typings";
 
 export const getPosts = async (
   _req: Request,
