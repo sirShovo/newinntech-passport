@@ -198,3 +198,15 @@ Crea un post.
   }
 }
 ```
+
+# Fuentes - API
+
+- https://www.section.io/engineering-education/how-to-create-a-simple-rest-api-using-typescript-and-nodejs/
+
+- https://www.youtube.com/watch?v=ZpY5KdGQvwI
+
+- https://dev.to/joshuajee/nodejs-github-authentication-using-passportjs-and-mongodb-2lfd
+
+- https://github.com/SamipPoudel58/nodejs-ts-google-oauth
+
+- https://geshan.com.np/blog/2023/03/mongodb-docker-compose/
